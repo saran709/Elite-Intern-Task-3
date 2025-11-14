@@ -1,0 +1,30 @@
+{
+  "general": [
+    {
+      "id": "1763131058232-ai2xw2",
+      "username": "saran ",
+      "text": "hi",
+      "email": "",
+      "reactions": {},
+      "time": "2025-11-14T14:37:38.232Z"
+    },
+    {
+      "id": "1763131074372-mb7iz3",
+      "username": "divya",
+      "text": "hi",
+      "email": "",
+      "reactions": {
+        "👍": [
+          "Anonymous"
+        ],
+        "😂": [
+          "Anonymous"
+        ],
+        "🎉": [
+          "Anonymous"
+        ]
+      },
+      "time": "2025-11-14T14:37:54.372Z"
+    }
+  ]
+}
