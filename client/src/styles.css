@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { font-family: Inter, system-ui, Arial; margin:0; padding:0; height:100vh; }
+.app { display:flex; flex-direction:column; height:100vh; }
+.top { display:flex; justify-content:space-between; align-items:center; padding:12px; background:#0f172a; color:#fff; }
+.top input { margin-right:8px; padding:6px 8px; }
+.top button { padding:6px 10px; }
+.chat { display:flex; flex:1; }
+.sidebar { width:220px; background:#f3f4f6; padding:12px; border-right:1px solid #e5e7eb; }
+.messages { flex:1; display:flex; flex-direction:column; }
+.messages-list { padding:16px; flex:1; overflow:auto; background:#ffffff; }
+.msg { margin-bottom:12px; padding:8px; border-radius:6px; background:#eef2ff; }
+.msg.system { background:transparent; color:#6b7280; font-style:italic; }
+.msg .meta { display:flex; gap:8px; align-items:center; margin-bottom:6px; }
+.msg .avatar { width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:600; margin-right:8px; flex-shrink:0; }
+.msg .meta .username { margin-right:8px; }
+.message-row { display:flex; align-items:flex-start; }
+.message-row .bubble { flex:1; }
+.reactions { display:flex; gap:8px; margin-top:6px; }
+.reaction { background:#f3f4f6; padding:4px 8px; border-radius:999px; cursor:pointer; font-size:0.9rem; }
+.reaction.own { background:#d1fae5; }
+.users-list { list-style:none; padding:0; margin:0; }
+.users-list li { display:flex; justify-content:space-between; align-items:center; padding:6px 0; }
+.kick { background:transparent; border:1px solid #ef4444; color:#ef4444; padding:4px 6px; border-radius:4px; cursor:pointer; }
+.msg button { margin-left:6px; padding:4px 6px; }
+.msg input { padding:6px; margin-right:6px; }
+.composer { display:flex; gap:8px; padding:12px; border-top:1px solid #e5e7eb; }
+.composer input { flex:1; padding:8px; }
+.status { font-size:0.9rem; opacity:0.8 }
