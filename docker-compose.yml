@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  server:
+    build: ./server
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./server/data:/app/data
+    restart: unless-stopped
+
+  client:
+    build:
+      context: ./client
+      args:
+        VITE_SERVER_URL: "http://server:4000"
+    ports:
+      - "5173:80"
+    depends_on:
+      - server
+    restart: unless-stopped
